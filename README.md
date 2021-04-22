@@ -53,6 +53,7 @@ diagramme uml de la base de données:
 
 <img width="100%" alt="uml-jeuxblog" src="https://user-images.githubusercontent.com/73837618/114027552-c646f000-9877-11eb-85e5-80dc4915b555.png">
 
+Vous trouverez une copie de la base de données dans le fichier database.sql
 
 
 pour l'installation de l'application:
