@@ -150,7 +150,7 @@ try{
     }
 
 }catch(\Exception $e){;
-    $errorMessage = "page introuvable !";
+    $errorMessage = $e->getMessage() ;
     $frontController->error($errorMessage);
   
 };
