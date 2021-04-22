@@ -1,5 +1,7 @@
 ﻿projet-blog-jeu
 
+https://blog-ludik.lesdeveloppeursbretons.com
+
 sujet: blog sur les jeux de société 
 
 site web réalisé avec une structure MVC (php-html-css-javascript) avec composer
@@ -34,32 +36,37 @@ le site comprends 2 parties:
     -une page contact:
         contient un formulaire de contact avec autocompletion de l'adresse par une API
  
- -une partie back accessible uniquement par l'administrateur permettant de gerer toute la partie front:
+ -une partie back accessible uniquement par l'administrateur permettant de gerer la partie front:
 
-    -mails recus
+    -visualisation-suppession des messages recus
     
-    -création-édition de jeux
+    -création-édition-suppression de jeux
     
-    -suppression des commentaires sur les jeux
+    -suppression des commentaires sur chaque jeu
 
-    -insertion/suppression des images
+    -insertion/suppression des images dans la bibliothèque
     
     -edition du top
 
-
-pour l'installation du fichier :
-pour lier votre base de données renommer le fichier Manager.example.php en Manager.php
-et y remplacer:
-
--yourdbname par le nom de votre base de données
-
--yourusername par le nom de votre nom d'utilisateur
-
--yourpassword par votre mot de passe
 
 diagramme uml de la base de données:
 
 <img width="100%" alt="uml-jeuxblog" src="https://user-images.githubusercontent.com/73837618/114027552-c646f000-9877-11eb-85e5-80dc4915b555.png">
 
 
+
+pour l'installation de l'application:
+
 clone git du projet: https://github.com/iledarais56/blog-ludik.git
+
+pour lier votre base de données renommer le fichier Manager.example.php en Manager.php
+et y remplacer:
+
+    -yourdbname par le nom de votre base de données
+
+    -yourusername par le nom de votre nom d'utilisateur
+
+    -yourpassword par votre mot de passe
+
+
+
