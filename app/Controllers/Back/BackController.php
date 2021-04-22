@@ -13,7 +13,7 @@ class BackController{
 
         $meta_title = "Blog-ludik-admin-connexionAdministrateur";
 
-        require'app/views/Back/connexionAdmin.php';
+        require'app/views/Front/connexionAdmin.php';
     }
 
     //utilisé a l'initialisation du projet pour créer l'admin
