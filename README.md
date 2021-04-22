@@ -50,8 +50,11 @@ le site comprends 2 parties:
 pour l'installation du fichier :
 pour lier votre base de données renommer le fichier Manager.example.php en Manager.php
 et y remplacer:
+
 -yourdbname par le nom de votre base de données
+
 -yourusername par le nom de votre nom d'utilisateur
+
 -yourpassword par votre mot de passe
 
 diagramme uml de la base de données:
