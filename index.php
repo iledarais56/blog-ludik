@@ -135,22 +135,20 @@ try{
             }
         }
         
-        //redirection pour htaccess
+        //pour htaccess
         elseif($_GET['action']==='404'){
-            $errorMessage = "page introuvable !";
-            $frontController->error($errorMessage);
-        }
-        else {
-            $errorMessage = "page introuvable !";
-            $frontController->error($errorMessage);;
-        }
+            throw new \Exception("Page introuvable !");
+       }
+       else {
+       throw new \Exception("Page introuvable !");
+   }
 
-    }else{ //Si aucune action n'est réalisée, la page est redirigée sur la page d'accueil
-        $frontController->accueil();
-    }
+   }else{
+       $frontController->accueil();
+   }
 
 }catch(\Exception $e){;
-    $errorMessage = $e->getMessage() ;
-    $frontController->error($errorMessage);
-  
+   $errorMessage = $e->getMessage() ;
+   $frontController->error($errorMessage);
+ 
 };
