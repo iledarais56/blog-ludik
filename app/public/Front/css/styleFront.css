@@ -1,0 +1,1147 @@
+/* variables pour palette de  couleurs */
+
+:root{
+    --nav-bg-color:rgba(84, 46, 113,1);
+    --main-bg-color:rgba(51, 51, 51,1);
+    --bloc-color:rgba(221, 216, 184,1);
+    --main-text-color:rgba(255, 255, 255,1);
+    --main-title-color:rgba(255, 255, 0,1);
+    --main-hover:linear-gradient(to bottom right,var(--main-title-color),var(--nav-bg-color));
+}
+/* ------------reset html ------*/
+*{
+    padding:0;
+    margin:0;
+  }
+  a {
+      text-decoration: none;
+      font-style: none;
+  }
+  ul {
+      list-style-type:none;
+  }
+/* ------------------------------------------------------------------------------------- */
+/* style mobile------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+body{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size:1.2rem;
+    font-family: roboto;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* header------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+header{
+    position:fixed;
+    z-index :50;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    min-height:100px;
+    justify-content: space-between;
+    background:var(--nav-bg-color);
+}
+header a{
+    color:var(--main-text-color);
+} 
+
+/* menu de navigation------- */
+
+.switch {
+    top:0;
+    padding-top:70px;
+}
+nav ul {
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    position: fixed;
+    top: -400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top:60px;
+    transition: top 1s ease;
+}
+nav ul li{
+    position: relative;
+    font-size:1.5rem;
+    padding-right:30px;
+    padding-left:30px;
+    padding-top:5px;
+    padding-bottom:15px;
+}
+nav ul li:hover{
+    color:var(--main-hover);
+}
+/* bouton de connection admin------------------- */
+#connect{
+    position:fixed;
+    top:5px;
+    right:10px;
+    display:flex;
+    flex-direction:row;
+    width:30px;
+}
+#connect figure{
+    margin-top:0;
+    
+}
+/* logo------------------------------------------- */
+#logo{
+    position:fixed;
+    top:30px;
+    right:30px;   
+    z-index:100;
+}
+#logo a{
+    display:flex;
+    flex-direction: row;
+}
+#svg{
+    display:none;
+}
+#textforlogo{
+    font-size:2.4rem;
+    font-weight:bold;
+}
+
+/* bouton menu burger -------------------------------*/
+#burger { 
+    position :fixed; 
+    top :30px; 
+    left :30px; 
+    z-index :50;
+    padding:5px 8px; 
+    color:var(--main-text-color);
+    background:var(--main-bg-color); 
+    border-radius:5px;
+    cursor:pointer;
+    display:block;
+}
+#burger svg{
+    height:25px; 
+    width:25px;
+}
+#burger:hover {	
+    background:var(--main-text-color); 
+    color: var(--main-bg-color);	
+    border: solid 1px var(--main-text-color);
+}
+
+/* fin header-------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------ */
+/* main-------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+main{
+    width:100%;
+    min-height:100vh;
+    margin-top:30px;
+    background:var(--main-bg-color);
+    color:var(--main-text-color);
+}
+.main-container{
+    margin-top:200px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.all-articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:20px;
+  }
+.article,.bloc,#avisjeu,.articlecomment,#blocdescription,.formarticle,#mentionbloc{
+    padding:10px;
+    margin:10px;
+    border:10px double var(--main-text-color);
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.articlecomment{
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    width:200px;
+    height:300px;
+    font-size: 1.4rem;
+}
+.click{
+    margin:40px;
+      display: none;
+}
+.displayed{
+    transition:1s ease-in-out;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition:1s ease-in-out;
+    -moz-transition:1s ease-in-out;
+    -ms-transition:1s ease-in-out;
+    -o-transition:1s ease-in-out;
+}
+.undisplayed{
+    transition: 1s ease-in-out;
+    width:100%;
+    height: 100%;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}
+.articlecomment:hover .click{
+      display: block;
+}
+.articlecomment:hover .descriptionjeu{
+    display: none;
+}
+.article{
+    width:200px;
+    height:350px; 
+    color:var(--main-text-color);
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.article:hover{
+    background:var(--main-hover);
+    box-shadow:2px 2px 10px var(--nav-bg-color);
+}
+.article p{
+    padding: 10px;
+    text-align:center;
+}
+
+/* images------ */
+.image-container{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+.image-container img,.topcontainer-image{
+    width:90%;
+    height:90%;
+    border:2px solid var(--main-title-color);
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.image{
+    width:30%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.image img{
+    width:80%;
+    height:80%;
+    border:2px solid var(--main-title--color);
+}
+/* h-text------- */
+h1,
+h3,h2,.text{
+    text-align: center;
+}
+
+h1{
+  font-size:3rem;
+  color:var(--main-title-color);
+  margin:10px;
+}
+.note{
+    font-size: 2.2rem;
+}
+
+  
+/* accueil--------------------- */
+#slider{
+    display:none;
+}
+#accueiltitre,#accueiltext{
+    text-align:center;
+}
+#accueiltitre{
+    margin-top:200px;
+}
+#accueiltext{
+    margin:20px;
+}
+#apropos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin:20px;
+}
+#apropos h2{
+    margin-bottom:30px;
+    padding: 5px;
+    font-size: 1.5rem;
+    border:1px solid var(--main-text-color);
+    box-shadow: 2px 2px 5px var(--main-text-color);
+    cursor: pointer;
+}
+#aproposbutton:hover{  
+    background:var(--main-hover); 
+}
+
+#apropostext a{
+    color:var(--main-title-color);
+}
+#apropostext a:hover{
+    color:var(--main-text-color);
+}
+/* categories--------------------- */
+
+
+#dice{
+    height:80px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+/* commentaires -- contact-------------------- */
+.formbloc{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.formarticle{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:50px;
+}
+.formarticle label{
+    margin:10px;
+    font-size:2rem;
+    text-align:center;
+}
+.formarticle input{
+    height: 50px;
+}
+.formarticle input,.formarticle textarea{
+    font-size:1.2rem;
+    text-align: center;
+}
+#formcheckbox{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#checkdata{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#checkdata a{
+    color:var(--main-title-color);
+}
+.acceptbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#accept{
+    margin:20px;
+    width:15%;
+}
+#formbutton{
+    cursor: pointer;
+}
+.absolute{
+    position:absolute;
+    display:block;
+}
+#adresssugest ul :hover{
+    cursor: pointer;
+}
+#adresssugest ul li:hover{
+    color: var(--main-title-color);
+}
+#totalcontent,#content{
+    height:200px;
+}
+
+#notepost{
+    width:30%;
+    align-self: center;
+    font-size:1.5rem;
+}
+.sub_btn{
+    display:flex;
+    justify-content: center;
+    margin:40px;
+    cursor: pointer;
+}
+.sub_btn input{
+    padding:1.2rem;
+    width:100%;
+    font-size: 20px;
+    border-radius:10px;
+    color:var(--main-text-color);
+    background: var(--nav-bg-color);
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.sub_btn input:hover{
+    color:var(--nav-bg-color);
+    background: var(--main-hover);
+    box-shadow:1px 1px 2px var(--main-text-color);
+}
+/* erreurs------------------------- */
+
+#erreurtext{
+    width:80%;
+}
+/* commentaires-------------------- */
+.commentaire{
+    height:250px;
+}
+.commentaire:hover .click{
+    display: block;
+}
+.commentaire:hover .descriptionjeu{
+  display: none;
+}
+.comment{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+  }
+
+.commentairebloc,#avisjeu{
+    margin:20px;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border:10px double var(--main-text-color);
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.commentairebloc p{
+    margin:10px;
+    
+  }
+#totalcomment{
+      padding:20px;
+      min-width:200px;
+      text-align: center;
+}
+#aviscomplet{
+      text-align: start;
+}
+.rond{
+      padding:40px;
+      width:100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      align-self:center;
+      border-radius:50%  ;
+      -webkit-border-radius:50%  ;
+      -moz-border-radius:50%  ;
+      -ms-border-radius:50%  ;
+      -o-border-radius:50%  ;
+      border:5px solid var(--main-text-color);
+      background-color: var(--nav-bg-color);
+}
+.commentairebloc1{
+    width:40%;
+}
+.commentairebloc2{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+#notecommentaire{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.erreurtext{
+      font-size: 1.2rem;
+      margin:20px;
+}
+
+  
+/* jeu--------------------- */
+#jeutitre{
+    margin:30px;
+}
+#imagejeu{
+    text-align:center;
+}
+#imagejeu img{
+    max-width:250px;
+    transition: 2s ease-in-out;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -ms-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    border:5px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#imagejeu img:hover{
+    transition: 2s ease-in-out;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -ms-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    border-radius:0    ;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+}
+#blocjeu,#commentairesjeufiche,#moyennenote{
+    display:flex;
+    flex-direction:column;
+}
+#moyennenote{
+    display:flex;
+    flex-direction: column;
+}
+#entetejeu{
+    display:flex;
+    flex-direction:column;
+}
+.descriptionjeu{
+    display: flex;
+    flex-direction:column;
+    color:var(--main-text-color);
+    margin-top:10px;
+}
+#description{
+    margin-top:20px;
+    text-align:center;
+}
+#blocdescription,#avisjeu{
+    font-size:1.4rem;
+}
+#avisjeu{
+    text-align:center;
+}
+#avisjeu h3,.bloc h3,.descriptionjeu p{
+    margin-bottom:20px;
+}
+
+.soulign{
+    text-decoration: underline;
+}
+.titrejeufiche{
+    margin:1.4rem;
+    font-size:25px;
+}
+
+.bloccomment{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.bloccomment :hover{
+    color:var(--main-title-color);
+    background:var(--nav-bg-color);
+}
+
+.btn{
+    margin:10px;
+    width:100%;
+    max-width:40%;
+    display:flex;
+    justify-content: center;
+    border: 1px solid;
+    padding: 20px;
+    text-decoration: none;
+    background:var(--main-text-color);
+    text-align:center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  .btn:hover{
+    color:var(--main-text-color);
+    background:var(--main-hover);
+    box-shadow:2px 2px 10px var(--main-text-color);
+}
+/* video------------------------------------------- */    
+#videojeu{
+    width:644px;
+    height:362px;
+}
+
+/* top--------------------- */
+.top{
+    font-size:1.8rem;
+    margin-top:30px;
+}
+.topcard{
+    text-align: center;
+}
+#numero1,#numero2,#numero3{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+#numero1{
+    background-color:gold;
+    color:black;
+}
+#numero2{
+    background-color:silver;
+    color:black;
+}
+#numero3{
+    background-color: #614e1a;
+    color:var(--main-text-color);
+}
+#numero1:hover,#numero2:hover,#numero3:hover{
+    background-color: var(--nav-bg-color);
+    color:var(--main-title-color);
+}
+/* mentions---------------------------------------------------------------------------- */
+#mentionbloc{
+    width: 80%;
+    height: auto;
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+#mentionbloc h2{
+    margin:20px;
+}
+#mentionbloc h3{
+    margin:10px;
+}
+#mentionbloc a{
+    color:var(--main-title-color);
+}
+#mentionbloc a:hover{
+    color:var(--main-bg-color);
+    text-shadow: 1px 1px 2px var(--main-text-color);
+}
+
+/* fin du main------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------ */
+/* footer------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+footer{
+    min-width:100%;
+    min-height:100px;
+    bottom:0;
+    font-size:1rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    color:var(--main-text-color);
+    background:var(--nav-bg-color);
+}
+#footercontain a{
+    color:var(--main-text-color);
+}
+#footercontain a:hover,header a:hover{
+    color:var(--main-title-color);
+}
+/* fin du footer----------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* médiaqueries------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* style tablettes--------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+@media (min-width: 850px) {
+
+/* ------------------------------------------------------------------------------------ */
+/* header------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+    
+    
+
+/* menu de navigation------------------------------- */
+    nav ul {
+        width: 65%;
+        position: fixed;
+        background-color: var(--header-background);
+        top: -15px;
+        padding-top:15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav ul li {
+        font-size: 1.3rem;
+        padding-top:30px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+   
+/* logo--------------------------------------------- */
+    #logo{
+        top:0px;
+        right:80px;
+        opacity:0.8;
+    }
+    #svg{
+        display:block;
+        height:200px;
+        width: 200px;
+        margin:4px;
+    }
+    #circle{
+        fill:var(--main-title-color);
+    }
+    #polygon{
+        fill:var(--nav-bg-color);
+    }
+    #logotext{
+        color:black;
+        stroke:#abcdef;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #textforlogo{
+        display:none
+    }
+   
+/* bouton menu burger -------------------------------*/
+
+    #burger{
+        display:none;
+    } 
+/* fin header-------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* main-------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+   
+    .main-container{
+        margin-top:80px;
+    }
+    h1{
+        font-size:3.5rem;
+        margin-top:120px;
+    }
+    .text{
+        font-size:2rem;
+    }
+/* slider------------------------------------------ */
+    #slider{
+        display:block;
+        display:flex;
+        justify-content: center;
+    }
+    #slide{
+        width:70%;
+        border:10px double var(--main-text-color);
+        padding:10px;
+    }
+    #precedent,
+    #suivant {
+    cursor: pointer;
+    transition: 0.3s ease-in-out ;
+    opacity: 0;
+    position: absolute;
+    font-size: 6rem;
+    font-weight:bolder;
+    color: var(--main-title-color);
+    padding: 40px;
+    top:500px;
+    -webkit-transition: 0.3s ease-in-out ;
+    -moz-transition: 0.3s ease-in-out ;
+    -ms-transition: 0.3s ease-in-out ;
+    -o-transition: 0.3s ease-in-out ;
+    }
+
+    #precedent {
+    left: 0;
+    }
+
+    #suivant {
+    right: 0;
+    }
+
+    #slider:hover #precedent,
+    #slider:hover #suivant {
+    opacity: 1;
+    }
+    #apropos h2{
+        max-width:50%;
+    }
+    #apropostext{
+        width:80%;
+    }
+/* commentaires -- contact------------------------- */
+    .form-container{
+        display:flex;
+        justify-content: center;
+    }
+    .form{
+        justify-content: center;
+    }
+    .formbloc{
+        width:60%;
+    }
+    .formarticle{
+        align-items:center;
+    }
+    #checkdata{
+        align-items:inherit;
+    }
+    .formarticle input,.formarticle textarea{
+        width:80%;
+        font-size: 2rem;
+    }
+    .sub_btn input{
+        max-width:40%;
+    }
+    #notepost{
+        font-size:2rem;
+    }
+    .acceptbox{
+        flex-direction: row;
+        
+    }
+/* commentaires------------------------------------ */
+
+    .commentaire{
+        width:20%;
+        height: 300px;
+    }
+    #totalcomment{
+        min-width:80%;
+    }
+    #aviscomplet{
+        text-align: center;
+  }
+    .commentairebloc{
+        font-size:1.5rem;
+    }
+    .commentairebloc2{
+        flex-direction:row;
+    }
+/* jeu--------------------------------------------- */
+    #jeu-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }  
+    #moyennenote{
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+    #blocdescription{
+        min-height:100px;
+        width:600px;
+        display:flex;
+        align-items: center;
+        font-size:25px;
+        justify-content: center;
+    }
+    #jeutitre{
+        font-size:80px;
+    }
+    .descriptionjeu{
+        justify-content: center;
+        padding-top:20px;
+        font-size:1.6rem;
+    }
+    #avisjeu{
+        font-size:1.5rem;
+        width:600px;
+    }
+    #commentairesjeufiche{
+        display:flex;
+        flex-direction:column;
+    }
+    .btn{
+        width:50%;
+    }
+/* video------------------------------------------- */    
+    #videojeu{
+        width:420;
+        height: 315;
+    }
+/* top--------------------------------------------- */
+    .topcard{
+        display:flex;
+        flex-direction: column;
+    }
+    .topcard a{
+        display:flex;
+        justify-content: center;
+    }
+    #top-container{
+        flex-wrap:nowrap;
+    }
+  
+
+/* fin du main------------------------------------------------------------------------- */
+
+}
+/* ------------------------------------------------------------------------------------ */
+/* fin style tablettes----------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* style ecran moyen------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+@media (min-width: 1000px)  {
+
+
+/* ------------------------------------------------------------------------------------ */
+/* header------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+/* menu de navigation------------------------------- */
+nav ul li{
+    font-size:1.6rem;
+}
+/* logo--------------------------------------------- */
+
+/* bouton menu burger -------------------------------*/
+
+
+/* fin header-------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* main-------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+
+/* images------------------------------------------ */
+#imagejeu img:hover{
+    max-width: 400px;
+}
+/* h-text------------------------------------------ */
+
+  
+/* accueil----------------------------------------- */
+
+/* categories-------------------------------------- */
+
+
+/* commentaires -- contact------------------------- */
+
+/* commentaires------------------------------------ */
+
+  #totalcomment{
+      width:800px;
+      min-width:50%;
+    
+    }
+/* jeu--------------------------------------------- */
+    #blocdescription {
+        min-height: 200px;
+        margin-bottom:50px;
+    }
+    #moyenne-note,#avisjeu,#blocdescription{
+        width:800px;
+    }
+   
+/* top--------------------------------------------- */
+
+/* fin du main------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* footer------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+/* fin du footer----------------------------------------------------------------------- */
+
+
+}
+/* ------------------------------------------------------------------------------------ */
+/* fin style ecran moyen--------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* style ecran large------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+@media (min-width:1400px) {
+
+
+/* ------------------------------------------------------------------------------------ */
+/* header------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+/* menu de navigation------------------------------- */
+    nav ul{
+        padding-top:0px;
+    }
+    nav ul li{
+        min-width: 150px;
+        font-size:2rem;
+        margin-top:30px;
+    }
+/* logo--------------------------------------------- */
+    #logo{
+        right:200px;
+    }
+/* bouton menu burger -------------------------------*/
+
+
+/* fin header-------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* main-------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+    
+
+/* images------------------------------------------ */
+    #imagejeu img {
+        max-width: 500px;
+    }
+    #imagejeu img:hover{
+        max-width: 600px;
+    }
+/* video------------------------------------------- */
+#videojeu{
+    width:1000px;
+    height:600px;
+}
+/* h-text------------------------------------------ */
+    h1{
+        margin-bottom:20px;
+    }
+    h2{
+        margin:20px;
+    }
+/* accueil----------------------------------------- */
+/* slider------------------------------------------ */
+    #precedent,#suivant{
+        top:700px;
+    }
+/* categories-------------------------------------- */
+
+.article{
+    width:400px;
+    height: 500px;
+    font-size: 2rem;
+}
+/* commentaires -- contact------------------------- */
+.formarticle{
+    margin-top:150px;
+}
+.formarticle label{
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+#notepost{
+    width: 10%;}
+/* commentaires------------------------------------ */
+    .erreurtext {
+        font-size: 2.1rem;
+    }
+    #totalcomment{
+        width:80%;
+        min-width:60%;
+      
+    }
+/* jeu--------------------------------------------- */
+    #blocdescription {
+        width: 1000px;
+    }
+    #blocjeu{
+        flex-direction: row;
+    }
+    #moyennenote,#avisjeu{
+        width:500px;
+    }
+/* top--------------------------------------------- */
+
+/* fin du main------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* footer------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+/* fin du footer----------------------------------------------------------------------- */
+
+
+}
+/* ------------------------------------------------------------------------------------ */
+/* fin style ecran large--------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */

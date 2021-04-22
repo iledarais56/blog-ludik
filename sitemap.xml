@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+  <url>
+    <loc>https://blog-ludik.lesdeveloppeursbretons.com/index.php?action=accueil</loc>
+  </url>
+  <url>
+    <loc>https://blog-ludik.lesdeveloppeursbretons.com/index.php?action=categories</loc>
+  </url>
+  <url>
+    <loc>https://blog-ludik.lesdeveloppeursbretons.com/index.php?action=categorie</loc>
+  </url>
+  <url>
+    <loc>https://blog-ludik.lesdeveloppeursbretons.com/index.php?action=jeuFiche</loc>
+  </url>
+  <url>
+    <loc>https://blog-ludik.lesdeveloppeursbretons.com/index.php?action=getAllcommentaires</loc>
+  </url>
+  <url>
+    <loc>https://blog-ludik.lesdeveloppeursbretons.com/index.php?action=top</loc>
+  </url>
+  <url>
+    <loc>https://blog-ludik.lesdeveloppeursbretons.com/index.php?action=contact</loc>
+  </url>
+  
+</urlset>
