@@ -8,7 +8,7 @@ class Manager{
     //connection a la base de données
     protected function bdConnect(){
         try{
-            $bdd = new \PDO('mysql:host=localhost;dbname=dywx7694_blog-ludik;charset=utf8', 'dywx7694_iledarais','gGD4hb6auedJx6xniH');
+            $bdd = new \PDO('mysql:host=localhost;dbname=yourdbname;charset=utf8', 'yourusername','yourpassword');
             if (isset($bdd)){
                return $bdd; 
             }

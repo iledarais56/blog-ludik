@@ -47,6 +47,13 @@ le site comprends 2 parties:
     -edition du top
 
 
+pour l'installation du fichier :
+pour lier votre base de données renommer le fichier Manager.example.php en Manager.php
+et y remplacer:
+-yourdbname par le nom de votre base de données
+-yourusername par le nom de votre nom d'utilisateur
+-yourpassword par votre mot de passe
+
 diagramme uml de la base de données:
 
 <img width="100%" alt="uml-jeuxblog" src="https://user-images.githubusercontent.com/73837618/114027552-c646f000-9877-11eb-85e5-80dc4915b555.png">
