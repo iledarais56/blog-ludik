@@ -52,4 +52,4 @@ diagramme uml de la base de données:
 <img width="100%" alt="uml-jeuxblog" src="https://user-images.githubusercontent.com/73837618/114027552-c646f000-9877-11eb-85e5-80dc4915b555.png">
 
 
-clone git du projet: https://github.com/iledarais56/projet-final.git# blog-ludik
+clone git du projet: https://github.com/iledarais56/blog-ludik.git
