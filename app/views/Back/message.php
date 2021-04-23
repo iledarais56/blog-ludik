@@ -5,12 +5,12 @@
 
     
     <h1>Blog-ludik  Admin</h1>
-    <div class="container">
+    <section class="container">
         <p id="message"> <?= $message ?></p>
-    </div>
-    <div class="container">
+    </section>
+    <section class="container">
         <a class="btn " href="indexAdmin.php?action=<?= $action  ?>">Retour</a>
-    </div>
+    </section>
 
 
 

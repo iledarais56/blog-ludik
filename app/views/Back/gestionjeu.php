@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 
         <h1>Gestion de jeu</h1>
-        <div class="container">
+        <section class="container">
 
             <?php $jeu =$getJeuAdmin->fetch(); ?>
 
@@ -19,7 +19,7 @@
                 <a class="btn" href="indexAdmin.php?action=commentaires&id_jeu=<?=htmlspecialchars($jeu['id']) ?>">Commentaires</a>
                          
                       
-        </div>
+        </section>
   
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

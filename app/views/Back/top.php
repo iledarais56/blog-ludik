@@ -5,7 +5,7 @@
 
     <h1>Gestion du top</h1>
 
-    <div class="container">
+    <section class="container">
 
         <?php foreach($tops as $top){ ?>
 
@@ -28,7 +28,7 @@
 
         <?php }  ?>    
 
-    </div>
+    </section>
  
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

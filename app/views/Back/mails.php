@@ -2,10 +2,10 @@
 
 
         <h1>Liste des mails</h1>
-        <div class="container">
+        <section class="container">
             <?php foreach($allMails as $allMail){ ?>
 
-                <div class="bloc">
+                <article class="bloc">
                    
                         <p class="soulign">Nouveau mail de :</p>
                         <p class="mailbox"> <?= htmlspecialchars($allMail['lastname']) ?> <?= htmlspecialchars($allMail['firstname']) ?></p>
@@ -21,11 +21,11 @@
                     
                         <a class="btn" href="indexAdmin.php?action=deleteMail&id=<?=$allMail['id'] ?>">Supprimer ce mail</a>
                    
-                </div>
+                </article>
 
             <?php }  ?>    
 
-        </div>
+        </section>
    
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

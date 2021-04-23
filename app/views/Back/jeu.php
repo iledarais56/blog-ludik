@@ -4,7 +4,7 @@
 
     <h1>Edition du jeu <?= htmlspecialchars($jeu['title']) ?> </h1>
     
-    <div class="container">
+    <section class="container">
                          
         <form  class="bloc" action="indexAdmin.php?action=updateJeu&id=<?=htmlspecialchars($jeu['id']) ?>" method="post">
             <label for="title">titre</label>
@@ -83,7 +83,7 @@
             
         </form>
              
-    </div>
+    </section>
 
 
 <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

@@ -4,7 +4,7 @@
   
 
     
-<div class="container">
+<section class="container">
 
     <form class="bloc" action="indexAdmin.php?action=deleteImage" method="post" >
         
@@ -30,7 +30,7 @@
         
     </form>
             
-</div>
+</section>
 
 
 

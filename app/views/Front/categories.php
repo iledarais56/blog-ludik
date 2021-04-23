@@ -6,10 +6,11 @@
         
         <div class="all-articles">
             
-                    <?php foreach($Categories as $categorie){ ?>
-                        
+                <?php foreach($Categories as $categorie){ ?>
+                
+                    <article class="article">    
                         <a href="index.php?action=categorie&id=<?= htmlspecialchars($categorie['id']) ?>" title="les jeux <?= htmlspecialchars($categorie['title']) ?>">
-                            <article class="article">
+                            
                                 
                                     <h2><?= htmlspecialchars($categorie['title']) ?></h2>
                                     
@@ -18,10 +19,11 @@
                                     </div>
                                     <p><?= htmlspecialchars($categorie['content']) ?></p>
                                 
-                            </article>
+                            
                         </a>
-
-                    <?php }  ?> 
+                    </article>
+                    
+                <?php }  ?> 
 
         </div>
     

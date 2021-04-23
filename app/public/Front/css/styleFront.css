@@ -16,6 +16,7 @@
   a {
       text-decoration: none;
       font-style: none;
+      color:var(--main-text-color);
   }
   ul {
       list-style-type:none;
@@ -589,6 +590,7 @@ h1{
     border: 1px solid;
     padding: 20px;
     text-decoration: none;
+    color:var(--main-bg-color);
     background:var(--main-text-color);
     text-align:center;
     border-radius: 5px;
