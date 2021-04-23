@@ -8,7 +8,7 @@
             
                     <?php foreach($tops as $top){ ?>
                         
-                        <div class="topcard">
+                        <article class="topcard">
                             <p class="soulign top">Numero <?= htmlspecialchars($top['numero']) ?> </p>
                             <a href="index.php?action=jeuFiche&id=<?= htmlspecialchars($top['id']) ?>&categorie=<?= htmlspecialchars($top['categorie']) ?>">
                                 <div class="article categorie" id="numero<?= htmlspecialchars($top['numero']) ?>">
@@ -18,7 +18,7 @@
                                     </div> 
                                 </div>
                             </a>
-                        </div>
+                        </article>
 
                     <?php }  ?>
 

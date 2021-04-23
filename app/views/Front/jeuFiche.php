@@ -66,7 +66,7 @@
             
             <div class="all-articles" >
                
-                    <a class="btn" title="écrire un commentaire"href="index.php?action=createCommentaire&id=<?= htmlspecialchars($jeu['id']) ?>&categorie=<?= htmlspecialchars($jeu['categorie']) ?>&title=<?=  htmlspecialchars($jeu['title']) ?>">poster un commentaire</a>
+                    <a class="btn" title="écrire un commentaire" href="index.php?action=createCommentaire&id=<?= htmlspecialchars($jeu['id']) ?>&categorie=<?= htmlspecialchars($jeu['categorie']) ?>&title=<?=  htmlspecialchars($jeu['title']) ?>">poster un commentaire</a>
                 
                     <a class="btn" title="tous les commentaires" href="index.php?action=getAllcommentaires&id=<?= htmlspecialchars($jeu['id']) ?>&categorie=<?= htmlspecialchars($jeu['categorie']) ?>">voir tous les commentaires</a>
                     

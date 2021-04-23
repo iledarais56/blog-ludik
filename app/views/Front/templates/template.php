@@ -11,7 +11,7 @@
     <!-- lien vers css -->
     <link rel="stylesheet" href="app/public/Front/css/styleFront.css">
     <!-- icone onglet -->
-    <link rel="icon"href="app/public/Front/images/dés.jpg" sizes="32x32">
+    <link rel="icon" href="app/public/Front/images/dés.jpg" sizes="32x32">
      <!-- SEO - Meta: Title  -->
     <title><?= $meta_title ?></title>
     
@@ -21,7 +21,7 @@
         <!-- lien vers connection admin -->
         <a id="connect" title="connexion de l'administrateur" href="index.php?action=admin">
             <figure class="image-container">
-                <img src="app\public\Front\images\dés.jpg"alt="dés" >
+                <img src="app/public/Front/images/dés.jpg" alt="dés" >
             </figure>
         </a>
         
@@ -29,10 +29,10 @@
         <nav>
             <!-- logo -->
            <div id="logo">
-                <a href="index.php"title="lien vers l'accueil">
+                <a href="index.php" title="lien vers l'accueil">
                     <p id="textforlogo">Blog-ludik</p>
                     <svg id="svg" xmlns="http://www.w3.org/2000/svg">
-                        <circle id="circle"cx="50%" cy="50%" r="50%" />
+                        <circle id="circle" cx="50%" cy="50%" r="50%" />
                         <polygon id="polygon" points="40,60 60,160 160,140 140,40 40,60 " />
                         <text id="logotext" x="12.5%" y="50%" >Blog-ludik</text>
                         <title> logo blog-ludik</title>
@@ -42,10 +42,10 @@
             </div>
             <!-- barre de navigation -->
             <ul>
-                <a href="index.php"title="page d'accueil"><li>Accueil</li></a>
-                <a href="index.php?action=categories"title="les différents jeux"><li>Les jeux</li></a>
-                <a href="index.php?action=top"title="classement des jeux"><li>Mes tops</li></a>
-                <a href="index.php?action=contact"title="formulaire de contact"><li>Contact</li></a>
+                <li><a href="index.php" title="page d'accueil">Accueil</a></li>
+                <li><a href="index.php?action=categories" title="les différents jeux">Les jeux</a></li>
+                <li><a href="index.php?action=top" title="classement des jeux">Mes tops</a></li>
+                <li><a href="index.php?action=contact" title="formulaire de contact">Contact</a></li>
                 
             </ul>
             <!-- icone menu burger -->
@@ -69,7 +69,7 @@
     <footer>
         <div id="footercontain">
             <p> Tous droits reservés 2021 - MVC -Kercode </p>
-            <a href="index.php?action=mentions"title="page RGPD">Mentions légales</a>
+            <a href="index.php?action=mentions" title="page RGPD">Mentions légales</a>
         </div>
         
     </footer>

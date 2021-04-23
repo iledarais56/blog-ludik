@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="app/public/Back/css/styleback.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link rel="icon"href="app/public/Front/images/dés.jpg" sizes="32x32">
+        <link rel="icon" href="app/public/Front/images/dés.jpg" sizes="32x32">
 
         <title>admin-blog-ludik</title>
     </head>
     <body>
         <main>
             <h1>Connexion Administrateur</h1>
-            <div id="connexioncontainer"class="container">
+            <div id="connexioncontainer" class="container">
                 
-                    <form id="connexionbloc"class="bloc" action="index.php?action=connexionAdmin"method="post">
+                    <form id="connexionbloc" class="bloc" action="index.php?action=connexionAdmin" method="post">
                     
                             <!-- 
                                 <label for="firstname">Prénom:</label>

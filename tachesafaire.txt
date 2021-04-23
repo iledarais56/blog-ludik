@@ -1,0 +1,8 @@
+taches a faire pour améliorer le site Blog-ludik:
+
+-articles:
+    -ajouter un onglet Actualitées avec un fil d'actualité qui contient les derniers articles 
+    -ajouter une page pour voir tous les articles
+
+-faire une barre de recherche des jeux
+

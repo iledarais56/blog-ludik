@@ -28,7 +28,7 @@
             
                 <a class="btn " href="index.php?action=jeuFiche&id=<?= htmlspecialchars($commentaire['id_jeu']) ?>&categorie=<?= htmlspecialchars($commentaire['categorieJeu']) ?>" title="vers le jeu <?php echo  htmlspecialchars($commentaire['titreJeu']) ?>">retour au jeu</a>
             
-                       
+        </div>               
         
 </section>
 

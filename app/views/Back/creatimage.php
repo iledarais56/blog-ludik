@@ -12,10 +12,10 @@
     ?>
     <div class="container">
 
-        <form  class="bloc"action="indexAdmin.php?action=creatImage" method="post" enctype="multipart/form-data" class="formImg">
+        <form  class="bloc" action="indexAdmin.php?action=creatImage" method="post" enctype="multipart/form-data">
 
             <input type="file" id="fileToUpload" name="fileToUpload" class="filesImg">
-            <input id="submit" type="submit" value="envoyer" name="submit" id="upload" class="submit">
+            <input id="submit" type="submit" value="envoyer" name="submit"  class="submit">
           
         </form>
 

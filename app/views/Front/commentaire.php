@@ -20,7 +20,7 @@
                 </div>
                 <div class="formarticle">
                 <label for="notepost">Votre note&emsp;</label>
-                <select id="notepost"name="notepost">
+                <select id="notepost" name="notepost">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

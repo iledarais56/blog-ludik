@@ -14,7 +14,7 @@
             
             <label for="categorie">Catégorie</label>
             
-            <select id="categorie"name="categorie">
+            <select id="categorie" name="categorie">
                 <option value="1">familiaux</option>
                 <option value="2">enfant</option>
                 <option value="3">d'ambiance</option>
@@ -23,7 +23,7 @@
             
             <label for="note">note</label>
             
-            <select id="note"name="note">
+            <select id="note" name="note">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -70,7 +70,7 @@
                 <?php }?>
             </select>
             
-            <input id="submit" type="submit"value="Créer">
+            <input id="submit" type="submit" value="Créer">
                 
         </form>
                         

@@ -39,14 +39,14 @@
 
                 <div class="formarticle" id="checkdata">
                     <div class="acceptbox">
-                        <input type="checkbox" id="accept" name="accept"></input>
-                        <label for="accept">J'accepte la <a href="index.php?action=mentions"title="page RGPD">politique de confidentialitée</a> du site</label>
+                        <input type="checkbox" id="accept" name="accept">
+                        <label for="accept">J'accepte la <a href="index.php?action=mentions" title="page RGPD">politique de confidentialitée</a> du site</label>
                         
                     </div> 
                 </div>
                 
                 <div class="sub_btn">
-                    <input type="submit"id="formbutton"name="formbutton" value="Envoyer"disabled>
+                    <input type="submit" id="formbutton" name="formbutton" value="Envoyer" disabled>
                 </div>
             
             </form>

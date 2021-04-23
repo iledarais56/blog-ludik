@@ -7,7 +7,7 @@
             <a class="btn" href="indexAdmin.php?action=createJeu">Créer un jeu</a>
         </div> 
         
-        <div id ="jeulist"class="container"> 
+        <div id ="jeulist" class="container"> 
 
             <?php foreach($allJeux as $jeu){ ?>
 

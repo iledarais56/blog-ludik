@@ -10,7 +10,7 @@
                     <?php foreach($jeux as $jeu){ ?>
                         
                         <a href="index.php?action=jeuFiche&id=<?= htmlspecialchars($jeu['id']) ?>&categorie=<?= htmlspecialchars($jeu['categorie']) ?>" title="le jeu <?= htmlspecialchars($jeu['title']) ?>">
-                            <div class="article">
+                            <article class="article">
                                 
                                 <h2><?= htmlspecialchars($jeu['title']) ?></h2>
                                 <div class="image-container">
@@ -18,7 +18,7 @@
                                 </div>
                                     
                                 
-                            </div>
+                            </article>
                         </a>
 
                     <?php }  ?> 
