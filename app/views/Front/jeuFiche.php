@@ -5,7 +5,7 @@
 <?php  $commentaires = $getCommentaires->fetchAll(); ?>
 <?php $moyenne = $getMoyenne->fetch(); ?>
 <section class="main-container">
-    <div id="jeu-container">
+    <article id="jeu-container">
         <h1 id="jeutitre"><?= $jeu['title']?></h1> 
         <div id="entetejeu">
             <div id="imagejeu">
@@ -73,7 +73,7 @@
             </div> 
         </div>
         
-    </div>
+    </article>
 </section>
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

@@ -28,7 +28,7 @@
             
         <nav>
             <!-- logo -->
-           <div id="logo">
+           <section id="logo">
                 <a href="index.php" title="lien vers l'accueil">
                     <p id="textforlogo">Blog-ludik</p>
                     <svg id="svg" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@
                         <desc> logo créé par blog-ludik </desc>
                     </svg >
                 </a>
-            </div>
+            </section>
             <!-- barre de navigation -->
             <ul>
                 <li><a href="index.php" title="page d'accueil">Accueil</a></li>
@@ -49,13 +49,13 @@
                 
             </ul>
             <!-- icone menu burger -->
-                <div id="burger"> 
+                <section id="burger"> 
                     <svg  viewBox="0 -53 384 384"  >
                         <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
                         <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
                         <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
                     </svg>
-                </div>
+                </section>
             
         </nav>    
     </header>
@@ -67,10 +67,10 @@
         
     </main>
     <footer>
-        <div id="footercontain">
+        <section id="footercontain">
             <p> Tous droits reservés 2021 - MVC -Kercode </p>
             <a href="index.php?action=mentions" title="page RGPD">Mentions légales</a>
-        </div>
+        </section>
         
     </footer>
    <!-- scripts -->

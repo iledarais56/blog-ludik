@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 
     <h1>Création de jeu </h1>
-    <div class="container">
+    <section class="container">
         
         <form  class="bloc" action="indexAdmin.php?action=newJeu" method="post" >
             <label for="title">titre</label>
@@ -74,7 +74,7 @@
                 
         </form>
                         
-    </div>
+    </section>
        
 <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->
 <?php require 'templates/template.php' ?>

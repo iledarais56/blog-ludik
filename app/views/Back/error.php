@@ -1,9 +1,8 @@
 <?php ob_start(); ?>
 
-
-
     <h1>Erreur</h1>
-        <p class="text"><?=  htmlspecialchars($errorMessage) ?></p>
+    
+    <p class="text"><?=  htmlspecialchars($errorMessage) ?></p>
     
 
 

@@ -1,4 +1,3 @@
-
 <?php ob_start(); ?>
 
 <?php  $name = $getJeuCategorieName->fetch(); ?>
@@ -7,9 +6,9 @@
 
     <h1>les commentaires sur le jeu <?php echo  htmlspecialchars($name['title']) ?></h1>
         
-    <div class="container">
+    <section class="container">
         <?php foreach($getAllcommentaires as $commentaire){ ?>
-            <div class="bloc">
+            <article class="bloc">
             
                 <p>posté par:&ensp; <?=  htmlspecialchars($commentaire['pseudo']) ?></p>
                 
@@ -22,16 +21,12 @@
                 
                 <a class="btn" href="indexAdmin.php?action=deletecommentaire&id=<?=htmlspecialchars($commentaire['id']) ?>">Supprimer ce commentaire</a>
             
-            </div>    
-            
-            
+            </article>    
+           
 
         <?php } ?>
         
-    </div>
-
-            
-     
+    </section>
 
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

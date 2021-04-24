@@ -2,7 +2,7 @@
 
 <section class="main-container">
     <h1>Mentions légales </h1>
-    <div class="all-articles">
+    <article class="all-articles">
         <div id="mentionbloc">  
             <h2>Définitions</h2>
                 <p><b>Client :</b> tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
@@ -217,7 +217,7 @@
             
             
         </div> 
-    </div>
+    </article>
 </section>
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

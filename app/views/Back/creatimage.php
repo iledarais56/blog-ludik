@@ -10,7 +10,7 @@
         echo "\t</p>\n\n";
       }
     ?>
-    <div class="container">
+    <section class="container">
 
         <form  class="bloc" action="indexAdmin.php?action=creatImage" method="post" enctype="multipart/form-data">
 
@@ -19,7 +19,7 @@
           
         </form>
 
-    </div>
+    </section>
 
 
 <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->

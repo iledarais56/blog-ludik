@@ -13,7 +13,7 @@
     <body>
         <main>
             <h1>Connexion Administrateur</h1>
-            <div id="connexioncontainer" class="container">
+            <section id="connexioncontainer" class="container">
                 
                     <form id="connexionbloc" class="bloc" action="index.php?action=connexionAdmin" method="post">
                     
@@ -37,7 +37,7 @@
                     </form>
                     <a href="index.php">Retour a l'accueil</a>
                 
-            </div>
+            </section>
         </main>
     </body>
 </html>

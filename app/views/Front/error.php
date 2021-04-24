@@ -3,9 +3,9 @@
 
 
     <h1>Erreur </h1>
-    <div class="all-articles">
+    <article class="all-articles">
         <p class="text erreurtext"><?=  htmlspecialchars($errorMessage) ?></p>
-    </div>
+    </article>
 
 </section>
 

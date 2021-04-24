@@ -1,9 +1,7 @@
 <?php ob_start(); ?>
 
 <h1>suppresion des images</h1>
-  
-
-    
+     
 <section class="container">
 
     <form class="bloc" action="indexAdmin.php?action=deleteImage" method="post" >
@@ -32,9 +30,6 @@
             
 </section>
 
-
-
- 
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->
 <?php require 'templates/template.php' ?>

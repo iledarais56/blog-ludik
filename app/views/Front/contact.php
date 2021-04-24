@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 
 <section class="main-container">
-    <div class="form-container">
+    <article class="form-container">
         <div class="formbloc">
             <h1>Contactez-nous</h1>
             <form action="index.php?action=contactMail" method="post">
@@ -51,7 +51,7 @@
             
             </form>
         </div>
-    </div>    
+    </article>    
 </section>
 
  <?php $content = ob_get_clean(); ?><!--fonction PHP pour injecter le template  -->
